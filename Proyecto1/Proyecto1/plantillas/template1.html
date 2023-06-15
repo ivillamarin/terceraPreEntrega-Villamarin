@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+</head>
+<body>
+    <p style="color: aqua;"> ke onda </p>  
+    <p style="color:blue"> mi nombre es: {{nombre}}</p>
+    <p style="color:crimson"> mi apellido es: {{apellido}}</p>
+
+    <div style="background-color: blue;">
+    <p> {% for name in namelist %}
+            {{name}}
+            <br>
+        {% endfor %}
+    </p>
+    </div>
+    
+</body>
+</html>
