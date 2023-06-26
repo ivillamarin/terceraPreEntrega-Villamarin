@@ -22,8 +22,5 @@ from Proyecto1.views import saludo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludos/', saludo),
-    path('miNombreEs/<nombre>', miNombreEs),
-    path('probandoTemplate/',probandoTemplate),
     path('AppCoder/', include('AppCoder.urls')),
 ]
