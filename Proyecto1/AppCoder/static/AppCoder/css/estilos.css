@@ -6,6 +6,13 @@ body {
     margin: 0;
     padding: 0;
 }
+.fondo{
+    background-image: url("{% static 'AppCoder/multi/escuela.jpg'%}");
+}
+
+.navbar-brand{
+    color: blue;
+}
 
 .container {
     max-width: 1200px;

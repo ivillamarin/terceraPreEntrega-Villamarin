@@ -1,22 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
-
 <html lang="en">
-
+    
 <head>
     
 
-    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'AppCoder/css/estilos.css'%}" rel="stylesheet"/>
-    <link href="{% static 'AppCoder/css/styles.css'%}" rel="stylesheet"/>
-    <link href="{% static 'AppCoder/css/mystyle.css'%}" rel="stylesheet"/>
+    <link  href="{% static 'AppCoder/css/estilos.css' %}" rel="stylesheet"/>
+    <link  href="{% static 'AppCoder/css/styles.css' %}" rel="stylesheet"/>
+    <link  href="{% static 'AppCoder/css/mystyle.css' %}" rel="stylesheet"/>
 
     <title>colegio</title>
 
 </head>
 <body>   
+    <div class="fondo"> 
 
     <nav class="navbar navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container px-4 px-lg-5">
@@ -37,6 +37,7 @@
     <div class="contenido">
         {% block contenidoQueCambia %}
         {% endblock %}
+    </div>
     </div>
 </body>
 
