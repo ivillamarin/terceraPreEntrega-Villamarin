@@ -8,7 +8,7 @@
         <input placeholder="profesor/a" type="text" name="nombre" id="nombre">
         <input type="submit" value="buscar">
     </form>
-    {% if profesor %}
+    {% if Profesor %}
         {% for profesor in profesor%}
             <li>{{profesor.nombre}}</li>
             <li>{{profesor.apellido}}</li>

@@ -30,7 +30,7 @@ def buscarProfesor(request):
     if request.GET["nombre"]:
         nombre = request.GET["nombre"]
         profesor = Profesor.objects.filter(nombre = nombre)
-        return render(request, "AppCoder/GetProfesores.html", {"profesor": profesor})
+        return render(request, "/AppCoder/getProfesores.html", {"profesor": profesor})
     else:
         respuesta = "profesor no existe"
 
