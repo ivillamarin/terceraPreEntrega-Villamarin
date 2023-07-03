@@ -42,3 +42,21 @@
 </body>
 
 </html>
+
+.navText{
+    color: rgb(250, 250, 250) !important;
+}
+
+
+
+
+
+
+if request.GET["nombre"]:
+        nombre = request.GET["nombre"]
+        profesor = Profesor.objects.filter(nombre__icontains = nombre)
+        return render(request, "/AppCoder/getProfesores.html", {"profesor": profesor})
+    else:
+        respuesta = "profesor no existe"
+
+    return HttpResponse(respuesta)
