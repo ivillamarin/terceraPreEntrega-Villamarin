@@ -27,11 +27,8 @@ def getProfesores(request):
     return render(request, "AppCoder/GetProfesores.html")
 
 def buscarProfesor(request):
-    if request.GET["nombre"]:
-        nombre = request.GET["nombre"]
-        profesor = Profesor.objects.filter(nombre = nombre)
-        return render(request, "/AppCoder/getProfesores.html", {"profesor": profesor})
-    else:
-        respuesta = "profesor no existe"
+    nombre = request.GET["nombre"]
+    if nombre:
+        profesores = Profesor.objects.filter(nombre = nombre)
+    return render(request, "AppCoder/GetProfesores.html", {profesores : profesores})    
 
-    return HttpResponse(respuesta)
