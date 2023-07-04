@@ -10,14 +10,24 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
+.navbar-text{
+  color: white;
+}
 .navbar-brand{
   color: blue;
 }
+.info{
+  background-color: white;
+}
+
+.titulo{
+  background-color: white;
+}
 .fondo {
   background-image: url("../multi/escuela.jpg");
-  width: 800px;
-  height: 1400px;
+  padding: 50px;
+  width: 3000px;
+  height: 1100px;
 }
 :root {
   --bs-blue: #0d6efd;
@@ -392,12 +402,7 @@ select:disabled {
   display: none !important;
 }
 
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-    -webkit-appearance: button;
-}
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -452,10 +457,7 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
-  outline-offset: -2px;
-  -webkit-appearance: textfield;
-}
+
 
 /* rtl:raw:
 [type="tel"],
@@ -473,10 +475,7 @@ legend + * {
   padding: 0;
 }
 
-::file-selector-button {
-  font: inherit;
-  -webkit-appearance: button;
-}
+
 
 output {
   display: inline-block;

@@ -47,6 +47,24 @@
     color: rgb(250, 250, 250) !important;
 }
 
+[type=search] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield;
+}
+
+
+::file-selector-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance:;
+}
 
 
 

@@ -7,9 +7,19 @@
 
 .fondo {
     background-image: url("../multi/escuela.jpg");
-    width: 800px;
-    height: 1400px;
+    padding: 50px;
+    width: 3000px;
+    height: 1100px;
 }
 .navbar-brand{
     color: blue;
 }
+
+.titulo{
+    background-color: rgb(255, 255, 255);
+}
+
+.info{
+    background-color: white;
+}
+

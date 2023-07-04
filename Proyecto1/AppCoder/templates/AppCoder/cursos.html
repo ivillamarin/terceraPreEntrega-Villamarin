@@ -1,12 +1,15 @@
 <div> 
     {% extends "AppCoder/inicio.html" %}
     {% load static %}
-    <div class="fondo"> 
-    
+    <div> 
         {% block contenidoQueCambia %}
-        <h2>cursos</h2>
-        <p>info: Aqui se mostraran los cursos una vez comenzadas las clases</p>
+        <div class="titulo"> 
+            <h2>cursos</h2>
+        </div>
+        <div class="info">
+            <p>info: Aqui se mostraran los cursos una vez comenzadas las clases</p>
         <a href="/AppCoder/inicio">volver a inicio</a>
+        </div>
         {% endblock %}
     </div>
 </div>

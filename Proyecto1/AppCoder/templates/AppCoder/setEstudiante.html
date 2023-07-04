@@ -3,6 +3,7 @@
     {% load static %}
 
     {% block setEstudiante %}
+    <div class="info"> 
     <h2>Inscribir Estudiante: </h2>
         <form action="/AppCoder/setEstudiante/"    method="POST"> {% csrf_token %}
             <input placeholder="Nombre" type = "text" name="nombre" required>
@@ -10,5 +11,6 @@
             <input placeholder="Email" type = "email" name="email" >
             <input type = "submit" value="Enviar">
         </form>
+    </div>
     {% endblock %}
 </div>

@@ -3,6 +3,7 @@
     {% load static %}
 
     {% block getProfesores %}
+    <div class="info"> 
     <h3>Buscar profesor:</h3>
     <form action="{% url 'buscarProfesor' %}" method="GET">
         <input placeholder="profesor/a" type="text" name="nombre" id="nombre">
@@ -14,6 +15,7 @@
             <li>{{profesor.apellido}}</li>
             <li>{{profesor.email}}</li>
         {% endfor%}
-    {%endif%}   
+    {%endif%}  
+    </div> 
     {% endblock %}
 </div>
